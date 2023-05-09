@@ -9,7 +9,7 @@ the model of best fit. Finally, the overall best results will be
 compared with models built by others.
 
 # Model Building
-Our first model created will be a matrix factorization
+The first model created will be a matrix factorization
 model. This model is created by reading in data and splitting it between 80% training data and 20% testing data. Next, the training data is used to create a large sparse matrix by transforming the raw data to a
 COO matrix to a CSR matrix and finally to a dense matrix. We
 then perform the matrix factorization and multiply the two
@@ -32,10 +32,12 @@ and predicted values of the target variable.
 ![image](https://user-images.githubusercontent.com/50085554/236968702-a8bd272c-b1c8-41ea-8ccb-66c89fccb898.png)
 
 #Results and Conclusion
+
 Now, it can be determined that the matrix factorization model is a
 better model than the random forest model since the RMSE for
 the matrix factorization model is less than the RMSE for the
 random forest model. Therefore, the matrix factorization model will be used as the final model. 
+
 ![image](https://user-images.githubusercontent.com/50085554/236968973-5fda4269-bd69-4040-82e9-f7eef71aa9cf.png)
 
 The above image shows RMSE scores over time for models
