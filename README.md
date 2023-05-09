@@ -10,10 +10,10 @@ compared with models built by others.
 
 # Model Building
 The first model created will be a matrix factorization
-model. This model is created by reading in data and splitting it between 80% training data and 20% testing data. Next, the training data is used to create a large sparse matrix by transforming the raw data to a
-COO matrix to a CSR matrix and finally to a dense matrix. We
-then perform the matrix factorization and multiply the two
-matrices together, which gives us our prediction matrix. Next,
+model. The training data is used to create a large sparse matrix by transforming the raw data to a
+COO matrix to a CSR matrix and finally to a dense matrix. I
+then performed the matrix factorization and multiplied the two
+matrices together, which gives the prediction matrix. Next,
 I read-in our test data and transform it into a sparse matrix as
 well. I have chosen the number of latent features (k) to be 2.
 Now using the test sparse matrix, the model can be predicted on the testing data to
